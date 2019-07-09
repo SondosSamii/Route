@@ -1,97 +1,537 @@
-.background
+*
 {
-    background-image: url(images/business-2.jpg);
-    background-size: 100% ;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
-.logo
+body
 {
-    width: 10%;
-    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.navbar
+.clr
 {
-    
-    width: 50%;
-    
+    clear: both;
+}
+
+.learn-more-btn
+{
+    padding: 15px 30px;    
+    margin-top: 30px;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .home
 {
-    border-top: 2px #26B066 solid;
+    background-image: url(images/business-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20%;
 }
 
-ul
+.home-background
 {
-    list-style-type: none;
+    background-color: rgba(0,0,0,0.7);
+    background-size: 100%;
+    height: 100%;
+    padding-bottom: 20%;
 }
 
-li
+.nav
 {
-    display: inline;
-    padding: 10px 5px;
+    padding: 20px;
 }
 
-a
+.nav ul
 {
-    text-decoration: none;
-    color: white;
+    list-style: none;
+}
+
+.nav li
+{
+    padding: 30px 10px;
+    float: right;
+}
+
+.nav .contact-btn
+{
+    padding: 10px 20px;    
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.secondDiv
+.nav li a
+{    
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav .small-logo
+{
+    float: left;
+}
+
+.nav .small-logo img
+{
+    width: 70%
+}
+
+.home h1
+{
+    padding-top: 10%;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.home p
+{
+    padding: 30px 100px;
+    font-size: 50px;
+}
+
+.features
+{
+    overflow: auto;
+    padding: 30px 70px;
+    
+}
+
+.feature
+{
+    width: 33.33%;
+    float: left;
+    padding: 50px 0px;
+}
+
+.feature .feature-icon
+{
+    width: 10%;
+    float: left;
+}
+
+.feature img
+{
+    width: 100%;
+}
+
+.feature .feature-description
 {
     width: 80%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 36px;
-    padding: 12% 10%;
+    float: left;
+    padding-left: 20px;
 }
 
-h1
+.feature h3
 {
-    font-size: 24px;
+    font-weight: lighter;
 }
 
-button
+.feature p
 {
-    background-color: #26B066;
-    padding: 15px 15px;
-    border: 1px #26B066 solid;
-    border-radius: 10%;
-    color: white;
-}
-
-.why
-{
-    width: 32%;
-    display: inline-block;
-}
-
-p
-{
-    color: gray;
+    color: lightslategray;
+    line-height: 30px;
+    padding: 10px 0px;
 }
 
 .services
 {
-    background-color: lightgray;
+    background-color: #F9F9F9;
+    padding: 70px;
+    overflow: auto;
+}
+
+.services .service-head 
+{
     text-align: center;
+    padding-bottom: 70px;
+}
+
+.services h3
+{
+    font-size: 36px;
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+
+.services p, a
+{
+    color: lightslategray;
+}
+
+.services .service
+{
+    width: 30%;
+    float: left;
+    margin: 20px;
+    line-height: 30px;
+    background-color: #fff;
+}
+
+.services .service-img
+{
+    width: 100%;
+}
+
+.services .service-description
+{
+    padding: 20px;
+}
+
+.services .service-description h4
+{
+    font-size: 26px;
+    padding: 10px 0px;
+    font-weight: lighter;
+}
+
+.services .service a
+{
+    text-decoration: none;
+}
+
+.services .service .learn-next
+{
+    width: 3%;
+}
+
+.secret
+{
+    padding: 70px;
+}
+
+.secret .secret-img
+{
+    width: 50%;
+    float: right;
+}
+
+.secret .secret-img img
+{
+    width: 100%;
+}
+
+.secret .secret-description
+{
+    width: 50%;
+    margin: 0px 20px;
+}
+
+.secret h3
+{
+    font-size: 26px;
+    font-weight: lighter;
+    padding: 30px 0px;
+}
+
+.secret p
+{
+    color: lightslategray;
+    padding: 10px 0px;
+    line-height: 30px;
+}
+
+.secret .secret-sorts
+{
+    padding: 30px 10px;
+}
+
+.secret .secret-sorts .check-icon
+{
+    width: 3%;
+    padding: 15px 10px;
+    float: left;
+}
+
+.comments
+{
+    text-align: center;
+    padding: 70px 40px;
+    background-color: #F9F9F9;
+}
+
+.comments .icon img
+{
+    width: 3%;
+    padding: 50px 0px; 
+}
+
+.comment
+{
+    width: 33.33%;
+    text-align: left;
+    float: left;
+    padding: 20px 0px;
+    color: lightslategray;
+}
+
+.comments .comment-par
+{
+    width: 80%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.comments .comment .commenter
+{
+    padding-top: 10px;
+    padding-left: 40px;
+    color: #000;
+    font-size: 18px;
+}
+
+.comments .comment h4
+{
+    font-weight: lighter;
+    padding-left: 40px;
+    font-size: 18px;
+}
+
+.rating
+{
+    text-align: center;
+    height: 30%;
+    padding: 70px;
+}
+
+.rate
+{
+    width: 25%;
+    float: left;
+}
+
+.rate img
+{
+    width: 15%;
+    padding-bottom: 10px;
+}
+
+.rate span
+{
+    font-size: 50px;
+    color: lightslategray;
+}
+
+.rate h4
+{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+.view
+{
+    background-image: url(images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.view-background
+{
+    background-color: rgba(0,0,0,0.5);
+    background-size: 100%;
+    height: 100%;
+}
+
+.view h1
+{
+    padding-top: 10%;
+}
+
+.view p
+{
+    padding: 30px 16%;
+    font-size: 24px;
+}
+
+.other-services
+{
+    padding: 70px;
+    overflow: auto;
+}
+
+.other-services .other-services-head
+{
+    text-align: center;
+}
+
+.other-services .other-services-head h3
+{
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.other-services .other-services-head p
+{
+    font-size: 22px;
+    color: #58606b;
     padding: 10px;
 }
 
-.service
+.other-services .service
 {
-    width: 32%;
-    display: inline-block;
-    text-align: left;
+    width: 33.33%;
+    float: left;
 }
 
-img
+.other-services .service h4
 {
-    width: 100%;
-    align-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
 
+.other-services .service p
+{
+    color: #58606b;
+}
+
+.sponsors
+{
+    background-color: #F9F9F9;
+    text-align: center;
+    padding: 20px;
+}
+
+.sponsors .sponsor-img
+{
+    width: 15%;
+    padding: 70px 20px;
+}
+
+.contact-us
+{
+    background-color: #4caf50;
+    padding: 70px;
+}
+
+.contact-us button
+{
+    margin-top: 20px;
+    padding: 20px 40px;    
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+}
+
+.contact-us h1
+{
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.contact-us p
+{
+    font-size: 22px;
+    color: #fdf;
+}
+
+.details
+{
+    padding: 50px 70px;
+    overflow: auto;
+    background-color: #1f1f1f;
+    line-height: 30px;
+}
+
+.details h3
+{
+    color: #fff;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.details .detail
+{
+    width: 25%;
+    float: left;
+}
+
+.details .detail .about-head
+{
+    padding-left: 0px;
+}
+
+.details .detail .about-us
+{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.details .detail .hours, .details .detail .page, .details .detail .sub-detail
+{
+    overflow: auto;   
+}
+
+.details p
+{
+    font-size: 14px;
+    color: #58606b;
+    padding-left: 30px;
+}
+
+.details .detail img
+{
+    width: 5%;
+    float: left;
+    padding: 5px;
+}
+
+.details .detail a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #58606b;
+    padding-left: 7px;
+}
+
+.copyright
+{
+    background-color: #1b1b1b;
+    padding: 30px 70px;
+}
+
+.copyright p
+{
+    font-size: 14px;
+    color: #58606b;
+    float: left;
+}
+
+.copyright .social
+{
+    overflow: auto;
+}
+
+.copyright .social img
+{
+    width: 1.9%;
+    float: right;
+    border-radius: 50%;
+    padding: 0px 10px;
 }
