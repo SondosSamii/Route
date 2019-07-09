@@ -1,0 +1,102 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form>
+            <fieldset style="background: #8C747D; border-style: solid; border-width: 3px">
+                <legend style="background: #59454C; color: #D9C7CE">
+                    Personal Data
+                </legend>
+                <br/>
+                <br/>
+                
+                <fieldset style="background-color: antiquewhite; border-style: solid; border-width: 2px">
+                    <legend style="background: #59454C; color: #D9C7CE; height: 90; width: 90; border-style: solid; border-width: 1px">
+                        <br/>
+                        <p style="text-align: center"> Your Name </p>
+                    </legend>
+                    <br/>
+                    
+                    <table>
+                        <tr>
+                            <td> <label> * First Name </label> </td>
+                            <td> : </td>
+                            <td> <input type="text" name="fName" placeholder="Ex: Sondos" required/> </td>
+                        </tr>
+                        <tr>
+                            <td> <label> * Second Name </label> </td>
+                            <td> : </td>
+                            <td> <input type="text" name="sName" placeholder="Ex: Sami" required/> </td>
+                        </tr>
+                    </table>
+                    
+                </fieldset>
+                <br/>
+                
+                <table>
+                    <tr>
+                        <td> <label> Your Phone </label></td>
+                        <td> : </td>
+                        <td> <input type="tel" name="userTel" /></td>
+                    </tr>
+                    <tr>
+                        <td> <label> * E-mail </label> </td>
+                        <td> : </td>
+                        <td> <input type="email" name="userMail" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> * Password </label></td>
+                        <td> : </td>
+                        <td> <input type="password" name="userPass" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> <label> * Re-Password </label></td>
+                        <td> : </td>
+                        <td> <input type="password" name="userRePass" required/> </td>
+                    </tr>
+                </table>
+                <br/>
+                
+                <input type="radio" name="gender" value="Male" checked/>
+                <label> Male </label>
+                <br/>
+                <input type="radio" name="gender" value="Female"/>
+                <label> Female </label>
+                <br/>
+                <br/>
+                
+                <input type="checkbox" name="status" value="Student"/>
+                <label> Student </label>
+                <br/>
+                <input type="checkbox" name="status" value="Graduate"/>
+                <label> Graduate </label>
+                <br/>
+                <br/>
+                
+                <select name="university">
+                    <option value="" disabled> Governmental Universties in Egypt </option>
+                    <option value="Ain Shams"> Ain Shams University </option>
+                    <option value="Alexandria"> Alexandria University </option>
+                    <option value="Al Azhar"> Al Azhar University </option>
+                    <option value="Cairo"> Cairo University </option>
+                    <option value="Helwan"> Helwan University </option>
+                    <option value="" disabled>  </option>
+                    
+                    <option value="" disabled> Private Universties in Egypt </option>
+                    <option value="AUC"> American University in Cairo </option>
+                    <option value="BUE"> British University in Egypt </option>
+                    <option value="FUE"> Future University in Egypt </option>
+                    <option value="GUC"> German University in Cairo </option>
+                </select>
+                <br/>
+                <br/>
+                
+                <button type="submit">
+                    <img alt="Submit Button" src="Submit%20Button.jpg" /> 
+                </button>
+                <br/>
+                <br/>
+            </fieldset>
+        </form>
+    </body>
+</html>
