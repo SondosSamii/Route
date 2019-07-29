@@ -125,6 +125,7 @@ p
 .head
 {
     padding: 15% 0px;
+
 }
 
 .head h1
@@ -146,34 +147,41 @@ p
     color: #fff;
     font-size: 24px;
     font-weight: lighter;
+
 }
 
-.head span
+.head h3:after
 {
-    display: none;
-    opacity: 0;
-    transition: all 5s;
+    content: "";
+    animation: typewriter 3s infinite;
 }
 
-.home:hover h3 span
+@keyframes typewriter
 {
-    display: inline;
-    opacity: 1;
+    0%{ content: "Designer  |";}
+    5%{ content: "Designer|";}
+    10%{ content: "Design|";}
+    15%{ content: "Desi|";}
+    20%{ content: "De|";}
+    25%{ content: "|";}
+    30%{ content: "De|";}
+    35%{ content: "Deve|";}
+    40%{ content: "Develo|";}
+    45%{ content: "Develope|";}
+    50%{ content: "Developer|";}
+    55%{ content: "Developer|";}
+    60%{ content: "Develop|";}
+    65%{ content: "Devel|";}
+    70%{ content: "Dev|";}
+    75%{ content: "D|";}
+    80%{ content: "Des|";}
+    85%{ content: "Desig|";}
+    90%{ content: "Designe|";}
+    95%{ content: "Designer|";}
+    100%{ content: "Designer |";}
 }
 
-.head h3::after
-{
-    content: "Developer";
-    position: relative;
-    top: 0;
-    left: 0;
-}
 
-.home:hover h3::after
-{
-    opacity: 0;
-    display: none;
-}
 
 .about
 {
@@ -641,12 +649,12 @@ p
         width: 100%;
         margin-bottom: 10px;
     }
-    
+
     body .home .container
     {
         width: 100%;
     }
-    
+
     body .nav li
     {
         padding: 5px;
