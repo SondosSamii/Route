@@ -1,0 +1,249 @@
+body {
+    font-family: 'Montserrat', 'Lexend Deca', sans-serif;
+}
+
+.transparent-background {
+    background-color: rgba(207, 51, 55, 0.7);
+    background-size: inherit;
+    height: 100%;
+}
+
+
+/* Home Section */
+
+#home {
+    background-image: url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+}
+
+#main-content {
+    transition: margin-left .5s;
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+#main-content span {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#sideNav a,
+#sideNav i {
+    padding: 8px;
+    color: #fff;
+    display: block;
+}
+
+#sideNav a {
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.3s;
+    margin: 10px 10px 0px 0px;
+}
+
+#sideNav i {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 25px;
+}
+
+#sideNav a:hover,
+#sideNav i:hover {
+    cursor: pointer;
+    color: rgb(207, 51, 55);
+}
+
+
+/* Details Section */
+
+#details .container {
+    width: 50%;
+}
+
+#details h3 {
+    padding: 10px;
+    margin: 2px 0px 0px 0px;
+    background-color: rgba(214, 46, 51, 0.6);
+    color: #fff;
+    cursor: pointer;
+}
+
+.singerDetails {
+    padding: 20px 30px;
+    background-color: #eee;
+    display: none;
+}
+
+
+/* Duration Section */
+
+#duration {
+    background-image: url(../images/invitation-2508607__340.jpg);
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat;
+    height: 60%;
+}
+
+#duration .container {
+    margin: 25px;
+}
+
+.brdr {
+    border: 1px solid #fff;
+}
+
+#duration li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#duration h3 {
+    padding: 20px 10px;
+}
+
+#duration span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+
+/* Join Us Section */
+
+.join-us h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.join-us h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+.join-us p,
+.join-us .icon i {
+    color: #777;
+    font-size: 18px;
+}
+
+.join-us .icon a,
+.text-dark span {
+    color: #ec3237;
+}
+
+.join-us button {
+    margin: 0;
+}
+
+.contact-me {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+}
+
+.contact-me li {
+    display: flex;
+    align-items: center;
+}
+
+.contact-me a {
+    color: #777;
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #999;
+}
+
+.contact-me a:hover {
+    color: #fff;
+    border: 1px solid rgb(236, 51, 55);
+    background-color: rgb(236, 51, 55);
+}
+
+.msg-btn {
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: rgb(236, 51, 55);
+    border-radius: 0px;
+    margin: 30px 0px;
+    text-transform: uppercase;
+}
+
+.msg-btn:hover {
+    color: #fff;
+    background-color: rgba(220, 51, 55, 0.9);
+}
+
+@media screen and (max-width: 900px) {
+    #main-content span {
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+    .content {
+        margin-top: 250px;
+    }
+    .content h1 {
+        font-size: 22px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .sideNav {
+        padding-top: 15px;
+    }
+    .sideNav a {
+        font-size: 18px;
+    }
+    #details .container {
+        width: 80%;
+    }
+    #duration {
+        height: 40%;
+    }
+    #duration .container {
+        margin: 0px;
+    }
+    #duration li,
+    #duration h3,
+    #duration span {
+        font-size: 1.1em;
+    }
+    .join-us .col-xs-1,
+    .join-us .col-xs-11 {
+        font-size: 14px;
+    }
+}
