@@ -241,33 +241,33 @@ nav .container {
     color: rgb(236, 51, 55);
 }
 
-.counter {
+#counter {
     background-image: url(../images/project-counter.jpg);
     background-size: cover;
     padding: 10% 0px;
 }
 
-.counter .counter-border {
+#counter .counter {
     border: 1px solid #555;
     padding: 25px;
 }
 
-.counter i,
-.counter h4 {
+#counter i,
+#counter h4 {
     color: rgb(236, 51, 55);
 }
 
-.counter i {
+#counter i {
     font-size: 24px;
     padding-bottom: 20px;
 }
 
-.counter h3 {
+#counter h3 {
     color: #fff;
     font-weight: 500;
 }
 
-.counter h4 {
+#counter h4 {
     font-size: 20px;
     text-transform: uppercase;
 }
