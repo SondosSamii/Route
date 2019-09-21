@@ -50,7 +50,7 @@ body {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 200;
 }
 
@@ -62,7 +62,7 @@ body {
 
 .nav ul li {
     float: right;
-    padding: 20px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
 }
 
 .nav .small-logo {
@@ -72,6 +72,10 @@ body {
 
 .nav .small-logo img {
     width: 100%;
+}
+
+.nav ul .brdr {
+    border-top: 2px solid transparent;
 }
 
 .nav ul a {
@@ -87,8 +91,7 @@ body {
 }
 
 .nav .home-brdr {
-    border-top: 5px solid #4caf50;
-    padding-top: 15px;
+    border-top: 2px solid #4caf50;
 }
 
 .home .panel {
@@ -349,6 +352,7 @@ body {
     background-image: url(images/download.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
     color: #fff;
 }
@@ -553,19 +557,12 @@ body {
     body .nav .contact-btn {
         display: none;
     }
-    body .nav ul {
-        padding: 0px 10px;
-    }
     body .nav ul li {
-        padding: 0px 5px;
+        padding: 10px 5px;
     }
     body .nav ul a {
         font-size: 14px;
         font-weight: 100;
-        border: none;
-    }
-    body .nav .home-brdr {
-        border: none;
     }
     body .features .feature,
     body .services .service,
@@ -611,5 +608,11 @@ body {
     }
     body .copyright .social img {
         width: 25%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    body .nav ul .brdr {
+        display: none;
     }
 }
