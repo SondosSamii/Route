@@ -62,12 +62,12 @@ body {
 
 .nav ul li {
     float: right;
-    padding: 15px 10px 10px 10px;
+    padding: 20px 10px 5px 10px;
 }
 
 .nav .small-logo {
     float: left;
-    width: 12%;
+    width: 15%;
 }
 
 .nav .small-logo img {
@@ -75,7 +75,7 @@ body {
 }
 
 .nav ul .brdr {
-    border-top: 2px solid transparent;
+    border-top: 3px solid transparent;
 }
 
 .nav ul a {
@@ -88,10 +88,14 @@ body {
     background-color: #4caf50;
     padding: 10px 20px;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 .nav .home-brdr {
-    border-top: 2px solid #4caf50;
+    border-top: 3px solid #4caf50;
 }
 
 .home .panel {
@@ -550,18 +554,21 @@ body {
     padding: 0px 10px;
 }
 
-@media screen and (max-width:900px) {
-    body .nav .small-logo {
-        visibility: hidden;
+@media screen and (max-width:1200px) {
+    body .nav ul li {
+        padding-bottom: 10px;
     }
-    body .nav .contact-btn {
-        display: none;
+}
+
+@media screen and (max-width:950px) {
+    body .nav ul {
+        padding: 0px 10px;
     }
     body .nav ul li {
-        padding: 10px 5px;
+        padding-bottom: 15px;
     }
     body .nav ul a {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 100;
     }
     body .features .feature,
@@ -611,8 +618,29 @@ body {
     }
 }
 
-@media screen and (max-width:430px) {
-    body .nav ul .brdr {
+@media screen and (max-width: 650px) {
+    body .nav .small-logo {
+        width: 18%;
+    }
+    body .nav ul li {
+        padding: 15px 5px;
+    }
+    body .nav ul a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body .nav ul {
+        padding: 0px 5px;
+    }
+    body .nav ul li {
+        padding: 4px;
+    }
+    body .nav ul a {
+        font-size: 12px;
+    }
+    body .nav .contact-btn {
         display: none;
     }
 }
