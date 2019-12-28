@@ -26,7 +26,7 @@ var hoursElement = document.querySelector("#hours");
 var minutesElement = document.querySelector("#minutes");
 var secondsElement = document.querySelector("#seconds");
 var containerElement = document.querySelector(".containerDate");
-var endDate = "2019/11/22";
+var endDate = "2022/11/22";
 textContent = "";
 console.log(endDate);
 
