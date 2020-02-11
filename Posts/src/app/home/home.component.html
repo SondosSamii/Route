@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-lg-3 d-none d-lg-block">
+        <div class="container bg-light shadow rounded my-3 py-3">
+
+        </div>
+        <div class="container bg-light shadow rounded my-3 py-3">
+            <h4> <span> Page</span> You May Like </h4>
+        </div>
+        <div class="container bg-light shadow rounded my-3 py-3">
+            <h4> <span> Latest</span> Top News </h4>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="container shadow rounded my-3 py-3">
+            <div class="row align-items-center mx-2">
+                <div class="col-2">
+                    <img src="../../assets/images/profile-small-27.jpg" class="rounded-circle">
+                </div>
+                <div class="col-10 input-group">
+                    <input type="text" class="form-control rounded-pill" placeholder="Say Something..." aria-label="Say Something Here..." aria-describedby="User Post">
+                    <div class="input-group-append">
+                        <button class="btn text-white rounded-pill post-btn" href="" role="button" type="button"> POST </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngFor="let user of users; let i = index" class="container bg-light shadow rounded my-3">
+            <div *ngIf="photos[i] != undefined" [routerLink]="['/Post', posts[i].id]">
+                <div class="row py-3">
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                        <img class="img-fluid w-50 rounded-circle" [src]="photos[i].thumbnailUrl" alt={{title}}>
+                    </div>
+                    <div class="col-8">
+                        <h5> {{users[i].name}} </h5>
+                        <h6> User ID: {{users[i].id}}</h6>
+                        <p> Last updated 3 mins ago </p>
+                    </div>
+                </div>
+                <p>{{posts[i].body}}</p>
+                <img class="img-fluid w-100" [src]="photos[i].url" alt={{title}}>
+                <div class="container">
+                    <div class="row pt-3">
+                        <div class="col-9">
+                            <p>
+                                <i class="fas fa-heart mr-1"></i>
+                                You and 379 people like this
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p> 27 <i class="fas fa-comment-alt mx-1"></i>
+                                9 <i class="fas fa-share-alt mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-3 d-none d-lg-block">
+        <div class="container bg-light shadow rounded my-3 py-3">
+            <h4> <span> Recent</span> Notifications </h4>
+        </div>
+    </div>        
+</div>
