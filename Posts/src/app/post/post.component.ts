@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-post',
@@ -17,7 +18,7 @@ export class PostComponent implements OnInit {
   user;
   photos;
 
-  constructor( private _ActivatedRoute:ActivatedRoute, private _ApiService:ApiService) {
+  constructor( private _Title:Title, private _ActivatedRoute:ActivatedRoute, private _ApiService:ApiService) {
     this._ApiService.getPosts().subscribe(data => {
       this.post = data[this.postId-1];
       // console.log(this.post);
@@ -51,6 +52,7 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     this.getPostId();
+    this._Title.setTitle("Post");
   }
 
 }
