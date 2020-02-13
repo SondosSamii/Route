@@ -12,7 +12,7 @@ import { $ } from 'protractor';
 export class PostComponent implements OnInit {
 
   postId;
-  post=[];
+  post;
   comments=[];
   postComments=[];
 
