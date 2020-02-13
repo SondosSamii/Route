@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
 import { Title } from '@angular/platform-browser';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-post',
@@ -17,6 +18,8 @@ export class PostComponent implements OnInit {
 
   user;
   photos;
+
+  thumbUp;
 
   constructor( private _Title:Title, private _ActivatedRoute:ActivatedRoute, private _ApiService:ApiService) {
     this._ApiService.getPosts().subscribe(data => {
