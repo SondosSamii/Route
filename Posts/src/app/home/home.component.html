@@ -3,10 +3,10 @@
         <div class="bg-light shadow rounded my-3">
             <div class="card bg-light border-0">
                 <div class="img-box">
-                    <img class="card-img-top" src="../../assets/images/banner-small.jpg" alt="Small banner">
+                    <img class="card-img-top" src="assets/images/banner-small.jpg" alt="Small banner">
                     <div class="img-border">
                     </div>
-                    <img class="rounded-circle middle-img" src="../../assets/images/profile-midle-1.jpg" alt="Middle Profile">
+                    <img class="rounded-circle middle-img" src="assets/images/profile-midle-1.jpg" alt="Middle Profile">
                 </div>
                 <div class="card-body text-center mt-4">
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -17,37 +17,37 @@
             <h4> <span> Page</span> You May Like </h4>            
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-27.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-27.jpg" alt="Small Profile">
                 </div>
                 <div class="col-7">
                     <h3 class="page-title"> Travel The World <br> Adventure </h3>
                 </div>
                 <div class="col-2">
-                    <img class="img-fluid heart" src="../../assets/images/heart-color.png">
+                    <img class="img-fluid heart" src="assets/images/heart-color.png">
                 </div>
             </div>
 
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-27.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-27.jpg" alt="Small Profile">
                 </div>
                 <div class="col-7">
                     <h3 class="page-title"> Travel The World <br> Adventure </h3>
                 </div>
                 <div class="col-2">
-                    <img class="img-fluid heart" src="../../assets/images/heart.png">
+                    <img class="img-fluid heart" src="assets/images/heart.png">
                 </div>
             </div>
 
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-27.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-27.jpg" alt="Small Profile">
                 </div>
                 <div class="col-7">
                     <h3 class="page-title"> Travel The World <br> Adventure </h3>
                 </div>
                 <div class="col-2">
-                    <img class="img-fluid heart" src="../../assets/images/heart-color.png">
+                    <img class="img-fluid heart" src="assets/images/heart-color.png">
                 </div>
             </div>
 
@@ -56,7 +56,7 @@
             <h4> <span> Latest</span> Top News </h4>
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-27.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-27.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -66,7 +66,7 @@
             
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-32.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-32.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -76,7 +76,7 @@
 
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-28.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-28.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -88,12 +88,12 @@
     </div>
 
     <div class="col-lg-6 post-body">
-        <div class="container shadow rounded my-3 py-3">
-            <div class="row align-items-center mx-2">
-                <div class="col-2">
-                    <img src="../../assets/images/profile-small-27.jpg" class="rounded-circle">
+        <div class="container shadow rounded my-3 py-3 pr-3">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-2 col-3 cols">
+                    <img src="assets/images/profile-small-27.jpg" class="rounded-circle img-fluid">
                 </div>
-                <div class="col-10 input-group">
+                <div class="col-lg-9 col-8 cols input-group">
                     <input type="text" class="form-control rounded-pill" placeholder="Say Something..." aria-label="Say Something Here..." aria-describedby="User Post">
                     <div class="input-group-append">
                         <button class="btn text-white rounded-pill post-btn" href="" role="button" type="button"> POST </button>
@@ -105,7 +105,7 @@
             <div *ngIf="photos[i] != undefined" [routerLink]="['/Post', posts[i].id]">
                 <div class="row py-3">
                     <div class="col-4 d-flex justify-content-center align-items-center">
-                        <img class="img-fluid w-50 rounded-circle" [src]="photos[i].thumbnailUrl" alt={{photos[i].title}}>
+                        <img class="img-fluid w-75 rounded-circle" [src]="photos[i].thumbnailUrl" alt={{photos[i].title}}>
                     </div>
                     <div class="col-8">
                         <h5> {{users[i].name}} </h5>
@@ -117,15 +117,12 @@
                 <img class="img-fluid w-100" [src]="photos[i].url" alt={{photos[i].title}}>
                 <div class="container">
                     <div class="row pt-3">
-                        <div class="col-9">
-                            <p>
-                                <i class="fas fa-heart mr-1"></i>
-                                You and 379 people like this
-                            </p>
+                        <div class="col-lg-9 col-8 comments-cols">
+                            <p> <i class="fas fa-heart"></i> &nbsp; You and 379 others </p>
                         </div>
-                        <div class="col-3">
-                            <p> 27 <i class="fas fa-comment-alt mx-1"></i>
-                                9 <i class="fas fa-share-alt mx-1"></i>
+                        <div class="col-lg-3 col-4 comments-cols">
+                            <p> 27 &nbsp; <i class="fas fa-comment-alt"></i>
+                                &nbsp; 9 &nbsp; <i class="fas fa-share-alt"></i>
                             </p>
                         </div>
                     </div>
@@ -139,7 +136,7 @@
             <h4> <span> Recent</span> Notifications </h4>
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-32.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-32.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -149,7 +146,7 @@
             
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-27.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-27.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -159,7 +156,7 @@
             
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-32.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-32.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -169,7 +166,7 @@
 
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-28.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-28.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -179,7 +176,7 @@
 
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-27.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-27.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -189,7 +186,7 @@
             
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-32.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-32.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
@@ -199,7 +196,7 @@
 
             <div class="row page-body">
                 <div class="col-3">
-                    <img class="rounded-circle img-fluid page-img" src="../../assets/images/profile-small-28.jpg" alt="Small Profile">
+                    <img class="rounded-circle img-fluid page-img" src="assets/images/profile-small-28.jpg" alt="Small Profile">
                 </div>
                 <div class="col-9 pl-3">
                     <h3 class="card-title"> Any one can join with us
